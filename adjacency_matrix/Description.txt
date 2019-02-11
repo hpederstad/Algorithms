@@ -1,0 +1,33 @@
+Write a C++ program called adj_matrix.cpp that converts a directed graph stored in an input file into an adjacency matrix format.
+Your program should get an input file name from a user first.
+Then, it should read the content of the file and display the graph in the adjacency matrix format.
+In the assignment, you can assume that the maximum number of vertices in the input graph is less than or equal to 50. 
+ 
+Input file format: This is a sample input file called t1.txt.
+
+3
+2
+0 1
+1 2
+
+The first line (= 3 in the example) indicates that there are three vertices in the graph.
+The second line (= 2 in the example) presents the number of edges in the graph.
+The remaining two lines are the edge information in the graph.
+For the program, you should assume that the first vertex starts from the number 0.
+
+One blank space is used to delimiter the data.
+Note that there’s no blank space at the end of each line.
+
+The following presents a sample run of the C++ program.
+Your program must run exactly like this.
+Note that the bold text is a user’s input. 
+ 
+$ g++ -o adj_matrix adj_matrix.cpp
+$ ./adj_matrix
+Enter input file name: C:\\tmp\\t1.txt
+Number of vertices: 3
+Number of edges: 2
+Adjacency matrix:
+	0 1 0
+	0 0 1
+	0 0 0
